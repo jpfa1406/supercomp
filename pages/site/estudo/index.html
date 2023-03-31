@@ -1,0 +1,676 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Problema/">
+      
+      
+        <link rel="next" href="../metodologia/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.4">
+    
+    
+      
+        <title>Estudo PI - Super Computação</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.240905d7.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#estudo-pi" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Super Computação" class="md-header__button md-logo" aria-label="Super Computação" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Super Computação
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Estudo PI
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Super Computação" class="md-nav__button md-logo" aria-label="Super Computação" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Super Computação
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Problema/" class="md-nav__link">
+        Problema
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Estudo PI
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Estudo PI
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#defina-um-problema-dificil-computacionalmente" class="md-nav__link">
+    Defina um problema difícil computacionalmente:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qual-o-papel-das-heuristicas-na-abordagem-de-obter-solucoes-para-problemas-computacionalmente-dificeis" class="md-nav__link">
+    Qual o papel das heurísticas na abordagem de obter soluções para problemas computacionalmente difíceis?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-heuristica-gulosa-tem-alguma-garantia-de-otimalidade" class="md-nav__link">
+    A heurística gulosa tem alguma garantia de otimalidade?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qual-o-papel-que-a-aleatoriedade-exerce-em-problemas-de-combinacao-discretos" class="md-nav__link">
+    Qual o papel que a aleatoriedade exerce em problemas de combinação discretos?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-heuristica-de-busca-local-apresenta-vantagens-em-relacao-a-heuristica-gulosa" class="md-nav__link">
+    A heurística de busca local apresenta vantagens em relação à heurística gulosa?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#no-valgrind-qual-o-papel-do-indicador-ir" class="md-nav__link">
+    No Valgrind, qual o papel do indicador IR?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#se-um-problema-e-30-sequencial-qual-o-speedup-maximo-que-ele-pode-ter-ao-paralelizarmos" class="md-nav__link">
+    Se um problema é 30% sequencial, qual o speedup máximo que ele pode ter ao paralelizarmos?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quais-vantagens-e-desvantagens-da-passagem-de-parametros-por-referencia" class="md-nav__link">
+    Quais vantagens e desvantagens da passagem de parâmetros por referência?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#na-aula-sobre-valgrind-nos-vimos-formas-diferentes-de-somar-os-numeros-de-uma-matriz-qual-a-razao-para-a-diferenca-de-performance" class="md-nav__link">
+    Na aula sobre valgrind, nós vimos formas diferentes de somar os números de uma matriz. Qual a razão para a diferença de performance?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-se-da-a-heuristica-por-algoritmos-geneticos-qual-o-papel-da-mutacao" class="md-nav__link">
+    Como se dá a heurística por algoritmos genéticos? Qual o papel da mutação?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#na-busca-exaustiva-a-profundidade-de-busca-afeta-consideravelmente-o-resultado-obtido-explique-com-suas-palavras-a-importancia-de-se-buscar-conhecer-uma-profundidade-razoavel-de-busca" class="md-nav__link">
+    Na busca exaustiva, a profundidade de busca afeta consideravelmente o resultado obtido. Explique com suas palavras a importância de se buscar conhecer uma profundidade razoável de busca?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explore-x-exploit" class="md-nav__link">
+    Explore x Exploit
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metodologia/" class="md-nav__link">
+        Metodologia
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Heuristicas
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Heuristicas
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../heuristicas/Aleatoria/" class="md-nav__link">
+        Aleatoria
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../heuristicas/Gulosa/" class="md-nav__link">
+        Gulosa
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#defina-um-problema-dificil-computacionalmente" class="md-nav__link">
+    Defina um problema difícil computacionalmente:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qual-o-papel-das-heuristicas-na-abordagem-de-obter-solucoes-para-problemas-computacionalmente-dificeis" class="md-nav__link">
+    Qual o papel das heurísticas na abordagem de obter soluções para problemas computacionalmente difíceis?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-heuristica-gulosa-tem-alguma-garantia-de-otimalidade" class="md-nav__link">
+    A heurística gulosa tem alguma garantia de otimalidade?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qual-o-papel-que-a-aleatoriedade-exerce-em-problemas-de-combinacao-discretos" class="md-nav__link">
+    Qual o papel que a aleatoriedade exerce em problemas de combinação discretos?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-heuristica-de-busca-local-apresenta-vantagens-em-relacao-a-heuristica-gulosa" class="md-nav__link">
+    A heurística de busca local apresenta vantagens em relação à heurística gulosa?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#no-valgrind-qual-o-papel-do-indicador-ir" class="md-nav__link">
+    No Valgrind, qual o papel do indicador IR?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#se-um-problema-e-30-sequencial-qual-o-speedup-maximo-que-ele-pode-ter-ao-paralelizarmos" class="md-nav__link">
+    Se um problema é 30% sequencial, qual o speedup máximo que ele pode ter ao paralelizarmos?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quais-vantagens-e-desvantagens-da-passagem-de-parametros-por-referencia" class="md-nav__link">
+    Quais vantagens e desvantagens da passagem de parâmetros por referência?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#na-aula-sobre-valgrind-nos-vimos-formas-diferentes-de-somar-os-numeros-de-uma-matriz-qual-a-razao-para-a-diferenca-de-performance" class="md-nav__link">
+    Na aula sobre valgrind, nós vimos formas diferentes de somar os números de uma matriz. Qual a razão para a diferença de performance?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-se-da-a-heuristica-por-algoritmos-geneticos-qual-o-papel-da-mutacao" class="md-nav__link">
+    Como se dá a heurística por algoritmos genéticos? Qual o papel da mutação?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#na-busca-exaustiva-a-profundidade-de-busca-afeta-consideravelmente-o-resultado-obtido-explique-com-suas-palavras-a-importancia-de-se-buscar-conhecer-uma-profundidade-razoavel-de-busca" class="md-nav__link">
+    Na busca exaustiva, a profundidade de busca afeta consideravelmente o resultado obtido. Explique com suas palavras a importância de se buscar conhecer uma profundidade razoável de busca?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#explore-x-exploit" class="md-nav__link">
+    Explore x Exploit
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="estudo-pi">Estudo PI</h1>
+<h2 id="defina-um-problema-dificil-computacionalmente">Defina um problema difícil computacionalmente:</h2>
+<p>Problemas considerados difíceis computacionalmente são aqueles em que não há algoritmo conhecido que possa resolvê-los em <strong>tempo polinomial</strong> (ou seja, em tempo razoável para entradas grandes). Para resolver esses problemas, geralmente é necessário utilizar <strong>heurísticas</strong> ou algoritmos de aproximação, que fornecem <strong>soluções sub-ótimas</strong> em tempo razoável.</p>
+<h2 id="qual-o-papel-das-heuristicas-na-abordagem-de-obter-solucoes-para-problemas-computacionalmente-dificeis">Qual o papel das heurísticas na abordagem de obter soluções para problemas computacionalmente difíceis?</h2>
+<p>As <strong>heurísticas</strong> são técnicas utilizadas para encontrar soluções aproximadas para problemas computacionalmente difíceis, quando não é possível encontrar uma solução exata em tempo razoável. O papel das heurísticas é fornecer uma solução aproximada para o problema, que pode ser utilizada como uma <strong>boa aproximação da solução ideal</strong> em muitos casos. Porém, é importante destacar que as soluções obtidas por meio de heurísticas <strong>não são garantidamente ótimas</strong>, e podem ser menos precisas do que as soluções exatas, mas ainda assim fornecem uma boa aproximação e podem ser muito úteis em muitas situações.</p>
+<h2 id="a-heuristica-gulosa-tem-alguma-garantia-de-otimalidade">A heurística gulosa tem alguma garantia de otimalidade?</h2>
+<p>Não, a heurística gulosa <strong>não tem garantia de otimalidade</strong>. A abordagem gulosa é uma técnica heurística que segue uma estratégia de seleção de soluções que parecem ser ótimas a cada passo, sem considerar o impacto de suas escolhas no resultado final. Em outras palavras, a heurística gulosa faz escolhas <strong>locais ótimas</strong>, com a expectativa de que essas escolhas conduzam a uma <strong>solução global ótima</strong>. No entanto, essa abordagem não garante que a solução obtida seja ótima, nem fornece uma estimativa precisa do quão longe a solução está do <strong>ótimo global</strong>.</p>
+<h2 id="qual-o-papel-que-a-aleatoriedade-exerce-em-problemas-de-combinacao-discretos">Qual o papel que a aleatoriedade exerce em problemas de combinação discretos?</h2>
+<p>A aleatoriedade pode fornecer uma estratégia para <strong>explorar</strong> diferentes regiões do <strong>espaço de soluções</strong> e evitar ficar preso em <strong>ótimos locais</strong> ou soluções subótimas. Em outras palavras, a aleatoriedade pode ajudar a escapar de soluções locais ótimas e encontrar soluções globalmente melhores.</p>
+<p>Em alguns casos, a aleatoriedade pode ser usada para gerar soluções iniciais aleatórias para o problema e, em seguida, aplicar <strong>heurísticas determinísticas</strong> ou <strong>métodos de busca local</strong> para refiná-las e melhorar sua qualidade. Em outros casos, a aleatoriedade pode ser incorporada diretamente na <strong>heurística</strong>, por exemplo, através da introdução de operadores de <strong>mutação</strong> ou <strong>crossover</strong> aleatórios em algoritmos genéticos ou algoritmos evolutivos.</p>
+<h2 id="a-heuristica-de-busca-local-apresenta-vantagens-em-relacao-a-heuristica-gulosa">A heurística de busca local apresenta vantagens em relação à heurística gulosa?</h2>
+<p>Sim, a heurística de <strong>busca local</strong> apresenta algumas vantagens em relação à heurística <strong>gulosa</strong>. Enquanto a heurística gulosa toma decisões com base na escolha localmente ótima em cada etapa do processo de construção da solução, a busca local é uma técnica que tenta melhorar iterativamente uma solução inicial por meio da <strong>exploração de vizinhanças próximas</strong>.</p>
+<h2 id="no-valgrind-qual-o-papel-do-indicador-ir">No Valgrind, qual o papel do indicador IR?</h2>
+<p>No Valgrind, o indicador IR significa <strong>"Instruction Reads"</strong> (leituras de instruções) e é uma das estatísticas de desempenho coletadas pelo Valgrind. Ele representa o número de leituras de instruções feitas pela CPU enquanto o programa é executado em um ambiente simulado pelo Valgrind. Essa informação é útil para entender como o código está sendo executado e para identificar possíveis <strong>gargalos de desempenho</strong>, como laços de repetição ineficientes ou acessos desnecessários à memória.</p>
+<h2 id="se-um-problema-e-30-sequencial-qual-o-speedup-maximo-que-ele-pode-ter-ao-paralelizarmos">Se um problema é 30% sequencial, qual o speedup máximo que ele pode ter ao paralelizarmos?</h2>
+<p>Se um problema é 30% sequencial, isso significa que apenas 70% do problema pode ser paralelizado, já que 30% do tempo de execução será sempre sequencial e não poderá ser acelerado pelo paralelismo.</p>
+<ul>
+<li>
+<p>O speedup máximo que poderíamos alcançar seria dado pela Lei de Amdahl, que é dada pela fórmula:</p>
+</li>
+<li>
+<p>Speedup máximo = 1 / (1 - P), onde P é a fração sequencial do problema.</p>
+</li>
+<li>
+<p>Substituindo os valores, temos:</p>
+</li>
+<li>
+<p>Speedup máximo = 1 / (1 - 0,3) = 1 / 0,7 = 1,43</p>
+</li>
+</ul>
+<p>Portanto, o speedup máximo que poderíamos alcançar seria de 1,43 vezes, ou seja, uma aceleração de até 43% em relação à versão sequencial do problema. Note que esse valor é um limite superior teórico, e o speedup real alcançado pode ser menor devido a fatores como a sobrecarga de comunicação entre as partes paralelas e outras limitações do sistema.</p>
+<h2 id="quais-vantagens-e-desvantagens-da-passagem-de-parametros-por-referencia">Quais vantagens e desvantagens da passagem de parâmetros por referência?</h2>
+<p>A passagem de parâmetros por referência é uma técnica utilizada em linguagens de programação para que uma função possa <strong>acessar e modificar</strong> o valor de uma variável ou objeto que está fora do seu escopo.</p>
+<p><strong>Vantagens:</strong></p>
+<ul>
+<li><strong>Economia de memória:</strong> como a função recebe uma referência ao valor original, e não uma cópia do valor, é possível economizar memória.</li>
+<li><strong>Eficiência:</strong> a passagem de parâmetros por referência pode ser mais rápida do que a passagem por valor em alguns casos.</li>
+<li><strong>Modificação do valor original:</strong> a função pode modificar o valor original do objeto ou variável, o que é útil em situações em que se deseja alterar o estado de um objeto ou retornar mais de um valor da função.</li>
+</ul>
+<p><strong>Desvantagens:</strong></p>
+<ul>
+<li><strong>Alterar objeto original:</strong> a função pode inadvertidamente modificar o valor original do objeto.</li>
+<li><strong>Risco de vazamentos de memória:</strong> se a função não for cuidadosamente implementada, pode ocorrer o risco de vazamento de memória.</li>
+</ul>
+<h2 id="na-aula-sobre-valgrind-nos-vimos-formas-diferentes-de-somar-os-numeros-de-uma-matriz-qual-a-razao-para-a-diferenca-de-performance">Na aula sobre valgrind, nós vimos formas diferentes de somar os números de uma matriz. Qual a razão para a diferença de performance?</h2>
+<p>O problema é a gravação na memória do array: x[i][j]. Aqui está um pouco de perspectiva sobre o porquê:  </p>
+<p>Você tem um array bidimensional, mas a memória do computador é inerentemente unidimensional. Então, embora você imagine seu array assim:</p>
+<pre><code>0,0 | 0,1 | 0,2 | 0,3
+----+-----+-----+----
+1,0 | 1,1 | 1,2 | 1,3
+----+-----+-----+----
+2,0 | 2,1 | 2,2 | 2,3
+</code></pre>
+<p>Seu computador armazena isso na memória como uma única linha:</p>
+<pre><code>0,0 | 0,1 | 0,2 | 0,3 | 1,0 | 1,1 | 1,2 | 1,3 | 2,0 | 2,1 | 2,2 | 2,3
+</code></pre>
+<p>No segundo exemplo, você acessa o array fazendo um loop sobre o segundo número primeiro, ou seja:</p>
+<pre><code>x[0][0] 
+        x[0][1]
+                x[0][2]
+                        x[0][3]
+                                x[1][0] etc...
+</code></pre>
+<p>O que significa que você está acessando todos eles em ordem. Agora olhe para a primeira versão. Você está fazendo:</p>
+<pre><code>x[0][0]
+                                x[1][0]
+                                                                x[2][0]
+        x[0][1]
+                                        x[1][1] etc...
+</code></pre>
+<p>Devido à maneira como C organizou o array bidimensional na memória, você está pedindo para ele pular para todo lugar. Mas agora vem a surpresa: Por que isso importa? Todos os acessos à memória são iguais, certo?</p>
+<p>Não, por causa das caches. Os dados da memória são trazidos para a CPU em pequenos pacotes (chamados de "linhas de cache"), geralmente com 64 bytes. Se você tem inteiros de 4 bytes, isso significa que você está recebendo 16 inteiros consecutivos em um pacote organizado. É na verdade bastante lento buscar esses pacotes de memória; a CPU pode fazer muito trabalho no tempo que leva para carregar uma única linha de cache.</p>
+<p>Agora olhe de volta para a ordem dos acessos: O segundo exemplo está (1) pegando um pacote de 16 inteiros, (2) modificando todos eles, (3) repetindo 4000*4000/16 vezes. Isso é agradável e rápido, e a CPU sempre tem algo para trabalhar.</p>
+<p>O primeiro exemplo está (1) pegando um pacote de 16 inteiros, (2) modificando apenas um deles, (3) repetindo 4000*4000 vezes. Isso vai exigir 16 vezes mais "buscas" na memória. Sua CPU na verdade terá que gastar tempo esperando que essa memória apareça, e enquanto isso estiver acontecendo, você está perdendo um tempo valioso.</p>
+<h2 id="como-se-da-a-heuristica-por-algoritmos-geneticos-qual-o-papel-da-mutacao">Como se dá a heurística por algoritmos genéticos? Qual o papel da mutação?</h2>
+<p>A heurística por algoritmos genéticos utiliza operações de seleção, cruzamento e mutação para gerar novas <strong>soluções candidatas</strong> para um determinado problema. Inicialmente, é criada uma população de soluções aleatórias. Em seguida, é realizada uma avaliação de cada solução candidata, atribuindo-lhe um valor de <strong>aptidão</strong> ou <strong>fitness</strong>, que indica o quão boa é aquela solução em relação ao problema em questão.</p>
+<p>A partir da avaliação, é selecionada uma parte da população (normalmente as soluções mais aptas) para <strong>cruzamento</strong>. O cruzamento consiste em <strong>combinar características</strong> de duas ou mais soluções, gerando uma nova solução candidata. Por fim, é realizada uma <strong>mutação</strong>, que introduz uma pequena alteração <strong>aleatória</strong> em algumas das características da solução gerada pelo cruzamento. Esse processo é repetido até que uma solução satisfatória seja encontrada ou que o número máximo de iterações seja atingido.</p>
+<p>O papel da mutação é introduzir diversidade na população, evitando que todas as soluções se tornem muito semelhantes umas às outras. Sem mutação, a busca por soluções ótimas poderia ficar presa em um mínimo local, sem conseguir explorar outras regiões do espaço de soluções.</p>
+<h2 id="na-busca-exaustiva-a-profundidade-de-busca-afeta-consideravelmente-o-resultado-obtido-explique-com-suas-palavras-a-importancia-de-se-buscar-conhecer-uma-profundidade-razoavel-de-busca">Na busca exaustiva, a profundidade de busca afeta consideravelmente o resultado obtido. Explique com suas palavras a importância de se buscar conhecer uma profundidade razoável de busca?</h2>
+<p>A profundidade de busca na busca exaustiva é um fator crucial para obter resultados satisfatórios. Se a profundidade for muito rasa, o algoritmo pode não ser capaz de explorar todas as soluções possíveis e, portanto, pode não encontrar a solução ótima. Por outro lado, se a profundidade for muito grande, o algoritmo pode levar muito tempo para explorar todas as soluções possíveis, uma fez que a arvore cresce <strong>exponecialmente</strong> em relação a <strong>profundidade</strong>, o que pode não ser viável em termos de tempo e recursos computacionais.</p>
+<h2 id="explore-x-exploit">Explore x Exploit</h2>
+<p>"Explore" se refere a uma estratégia que envolve explorar novas opções e adquirir novas informações para reduzir a incerteza ou aumentar o conhecimento sobre o ambiente ou o problema em questão. (<strong>aumentar espaço de soluções</strong>)</p>
+<p>"Exploit" se refere a uma estratégia que envolve aproveitar ao máximo as informações existentes e as opções conhecidas para maximizar a recompensa ou minimizar a perda.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.19047be9.min.js"></script>
+      
+    
+  </body>
+</html>
