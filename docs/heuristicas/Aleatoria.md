@@ -471,8 +471,8 @@ Ir
 
 ## Resultados
 
-![image info](./img/aleatoria/img1.png)  
+![image info](img/aleatoria/img1.png)  
 
 > Representação geral da performace
 
-![image info](./img/aleatoria/img2.png)  
+![image info](img/aleatoria/img2.png)  

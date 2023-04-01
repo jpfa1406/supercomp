@@ -364,8 +364,8 @@ Ir
 
 ## Resultados
 
-![image info](./img/gulosa/img1.png)  
+![image info](img/gulosa/img1.png)  
 
 > Representação geral da performace
 
-![image info](./img/gulosa/img2.png)  
+![image info](img/gulosa/img2.png)  
