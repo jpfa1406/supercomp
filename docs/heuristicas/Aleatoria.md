@@ -18,7 +18,7 @@ O algoritimo utiliza a aleatoriedade para explorar o espaço de busca de forma a
 
 ## Implementação
 
-``` 
+```cpp 
 #include<iostream>
 #include<iomanip>
 #include<vector>
@@ -471,8 +471,8 @@ Ir
 
 ## Resultados
 
-![image info](./projeto01/outputs/aleatoria/img1.png)  
+![image info](./img/aleatoria/img1.png)  
 
 > Representação geral da performace
 
-![image info](./projeto01/outputs/aleatoria/img2.png)  
+![image info](./img/aleatoria/img2.png)  
