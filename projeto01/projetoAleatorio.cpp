@@ -147,6 +147,13 @@ int main(int argc, char *argv[]){
         output(melhor);
     }
 
+    ofstream outFile;
+    outFile.open("outputs/aleatorio/out_" + to_string(n) + "_" + to_string(nCat) + ".txt");
+    if (!outFile) {
+        cout << "Unable to open file";
+        exit(1); // terminate with error
+    }
+
     return 0;
 }
 

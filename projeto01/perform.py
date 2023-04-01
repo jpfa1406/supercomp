@@ -1,28 +1,24 @@
 import subprocess
 import matplotlib.pyplot as plt
+import os
 
 def roda_com_entrada(ex, in_f):
     proc = subprocess.run([ex, in_f], text=True, capture_output=True)
 
     return proc.stdout
 
-nFilme = 10
-tipo = "Guloso"
-nCategoria = 1
 arq = 1
 input = []
 output = []
 
-for i in range(5):
-        for j in range(6):
-            input.append("in" + "_" + str(nFilme) + "_" + str(nCategoria))
-            nCategoria += 1
-            arq += 1
-        nCategoria = 1
-        nFilme = nFilme * 10
+os.chdir("./inputs")
+for file in os.listdir():
+    if file.endswith(".txt"):
+        input.append(file.split('.')[0])
 
+os.chdir("..")
 for k in input:
-    out = roda_com_entrada('./projetoGuloso', k)
+    out = roda_com_entrada("./projetoGuloso", k)
     outputTuple = tuple(out.strip().split(' '))
     output.append(outputTuple)
 
