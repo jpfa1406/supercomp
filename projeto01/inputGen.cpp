@@ -44,18 +44,18 @@ int generateFile(string fileName, int nFilme, int nCategoria) {
 }
 
 int main(){
-    int nFilme = 10;
+    int nFilme = 10000;
     int nCategoria = 1;
     int arq = 1;
 
-    for (int i = 0; i < 7; i++){
+    for (int i = 0; i < 20; i++){
         for (int j  = 0; j < 6; j++){
             generateFile(("_" + to_string(nFilme) + "_" + to_string(nCategoria)), nFilme, nCategoria);
             nCategoria++;
             arq++;
         }
         nCategoria = 1;
-        nFilme = nFilme * 100;
+        nFilme = nFilme + 1000;
     }
     
     

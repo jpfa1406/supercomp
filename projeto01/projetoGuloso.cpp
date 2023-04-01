@@ -98,7 +98,7 @@ int main(int argc, char *argv[]){
 
     cout << n << ' ' << nCat << ' ' << chrono::duration_cast<chrono::microseconds>(end-start).count() << ' ' << assistir.size() << endl;
 
-    if(strcmp(argv[2], "-output") == 0){  
+    if(argc > 2 && strcmp(argv[2], "-output") == 0){  
         cout << "Quantidade de filmes:" << assistir.size() << endl;
         cout << "Tempo para assistir:" << maratona << endl;
 

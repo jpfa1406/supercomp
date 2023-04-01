@@ -86,7 +86,7 @@ int main(int argc, char *argv[]){
     sort(filmes.begin(), filmes.end(), ord_inicio);
     tmp = filmes;
 
-    for (int t = 0; t < 1000; t++){    
+    for (int t = 0; t < 10; t++){    
         filmes = tmp;
         assistir.clear();
         for (size_t i = 0; i < filmes.size(); i++){
@@ -138,7 +138,7 @@ int main(int argc, char *argv[]){
 
     cout << n << ' ' << nCat << ' ' << chrono::duration_cast<chrono::microseconds>(end-start).count() << ' ' << melhor.size() << endl;
 
-    if(strcmp(argv[2], "-output") == 0){  
+    if(argc > 2 && strcmp(argv[2], "-output") == 0){ 
         cout << "Quantidade de filmes:" << melhor.size() << endl;
         //cout << "Tempo para assistir:" << maratona << endl;
 
@@ -153,6 +153,8 @@ int main(int argc, char *argv[]){
         cout << "Unable to open file";
         exit(1); // terminate with error
     }
+
+    outFile <<  n << ' ' << nCat << ' ' << chrono::duration_cast<chrono::microseconds>(end-start).count() << ' ' << assistir.size() << endl;
 
     return 0;
 }
