@@ -1,3 +1,22 @@
+# OpenMP
+
+## Definição
+
+OpenMP (Open Multi-Processing) é uma API amplamente utilizada para a programação paralela. O OpenMP permite adicionar diretivas para indicar as regiões que podem ser executadas em paralelo. Essas regiões são chamadas de "regiões paralelas" e são executadas por múltiplas threads simultaneamente, compartilhando a mesma memória.
+
+## Principais recusos
+
+1 - __Diretivas:__ são comandos especiais inseridos no código-fonte para indicar as regiões paralelas. As diretivas OpenMP são precedidas por "#pragma omp" e fornecem instruções para o compilador.
+
+2 - __Cláusulas:__ fornecem informações adicionais sobre como a região paralela deve ser executada. Por exemplo, a cláusula "num_threads" especifica o número de threads a serem usadas na região paralela.
+
+4 - __Escopo de variáveis:__ compartilhamento de variáveis entre as threads. Variáveis declaradas fora das regiões paralelas são compartilhadas, enquanto variáveis declaradas dentro de uma região paralela são privadas e têm uma cópia para cada thread.
+
+5 - __Sincronização:__ mecanismos para sincronizar as threads, como as diretivas "barrier", que aguarda todas as threads atingirem um determinado ponto de sincronização, e "critical", que permite que apenas uma thread execute uma seção crítica por vez.
+
+
+## Implementação
+``` cpp
 #include<iostream>
 #include<iomanip>
 #include<vector>
@@ -152,3 +171,4 @@ int main(int argc, char *argv[]){
 
     return 0;
 }
+```

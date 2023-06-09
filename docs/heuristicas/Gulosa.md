@@ -17,7 +17,7 @@ O algoritmo possui uma regra de decisão unica e a aplica a cada passo, selecion
 
 ## Implementação
 
-```cpp
+``` cpp
 #include<iostream>
 #include<iomanip>
 #include<vector>
@@ -364,8 +364,8 @@ Ir
 
 ## Resultados
 
-![image info](img/gulosa/img1.png)  
+![image info](img\gulosoa\img1.png)
 
 > Representação geral da performace
 
-![image info](img/gulosa/img2.png)  
+![image info](img\gulosoa\img2.png)
